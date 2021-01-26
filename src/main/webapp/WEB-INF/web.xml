@@ -10,8 +10,23 @@
   	<description></description>
   	<servlet-class>com.hcl.web.ProductController</servlet-class>
   </servlet>
+  
+  <servlet>
+  	<servlet-name>SaveProductController</servlet-name>
+  	<display-name>SaveProductController</display-name>
+  	<description></description>
+  	<servlet-class> com.hcl.web.SaveProductController</servlet-class>
+  </servlet>
+ 
   <servlet-mapping>
   	<servlet-name>GetProductController</servlet-name>
   	<url-pattern>/getProduct</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SaveProductController</servlet-name>
+  	<url-pattern>/saveProduct</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

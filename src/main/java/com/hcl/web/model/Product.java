@@ -2,6 +2,11 @@ package com.hcl.web.model;
 
 public class Product {
 	
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", company=" + company + "]";
+	}
+
 	int id;
 	String name;
 	String company;
@@ -25,6 +30,22 @@ public class Product {
 	public void setCompany(String company) {
 		this.company = company;
 	}
+	
+	
+	public Product(int id, String name, String company) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.company = company;
+	}
+	
+	public Product() {
+		super();
+		
+	}
+	
+	
+	
 	
 
 }

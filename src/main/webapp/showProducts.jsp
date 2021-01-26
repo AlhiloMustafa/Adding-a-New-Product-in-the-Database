@@ -17,6 +17,16 @@
 
 <body bgcolor="green">
 	<h1>The Prouduct</h1>
+	
+	
+	<%
+	Object strMessage = request.getAttribute("message");
+	
+	if( strMessage != null)  { %>
+	
+	<h3><% out.println(strMessage.toString()); %></h3>
+	<% }%>
+	
 
 	<%
 	Product p1 = (Product) request.getAttribute("product");
